@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#071b2e">
+<title>Nursing JPU — بوابة طالب التمريض</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071b2e;--navy2:#0d304b;--teal:#2d9aa0;--teal2:#62c5c5;--gold:#d7b26d;--cream:#f7f4ec;--white:#fff;--ink:#13283a;--muted:#718294;--line:#e4e9ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Cairo,Arial,sans-serif;color:var(--ink);background:#f4f7f9}.container{width:min(1180px,calc(100% - 32px));margin:auto}
+.hero{position:relative;overflow:hidden;color:#fff;min-height:780px;background:radial-gradient(circle at 80% 25%,#55c3ca35,transparent 26%),radial-gradient(circle at 15% 75%,#d7b26d22,transparent 24%),linear-gradient(130deg,#061727,#0a2b45 55%,#0e5864)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 45%,#ffffff08 45%,transparent 65%);pointer-events:none}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}.logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:21px}.logo-mark{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),#f1d69e);color:var(--navy);font-size:22px;box-shadow:0 8px 25px #0003}.nav-links{display:flex;gap:4px}.nav-links button{border:0;background:transparent;color:#dbecef;padding:10px 15px;border-radius:12px;cursor:pointer}.nav-links button:hover{background:#ffffff12;color:#fff}.menu-btn{display:none;background:#ffffff12;border:1px solid #ffffff25;color:#fff;border-radius:10px;padding:8px 12px}
+.hero-content{min-height:690px;display:grid;grid-template-columns:1.02fr .98fr;gap:45px;align-items:center;padding-bottom:80px;position:relative;z-index:2}.eyebrow{font-size:12px;letter-spacing:1.6px;color:#c5e1e3;font-weight:700;margin-bottom:15px}.hero h1{font-size:clamp(52px,8vw,88px);line-height:.95;margin:0 0 16px;letter-spacing:-3px}.hero-title{font-size:clamp(22px,3vw,32px);font-weight:800;margin:0 0 12px}.hero-text{max-width:610px;line-height:2;color:#d8e8ed;font-size:16px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin:26px 0}.btn{border:0;border-radius:14px;padding:13px 21px;font-weight:800;cursor:pointer}.btn-primary{background:linear-gradient(135deg,#e8c679,#c99b4f);color:#092139;box-shadow:0 14px 30px #0003}.btn-glass{background:#ffffff12;color:#fff;border:1px solid #ffffff2b}.quote{display:flex;gap:14px;max-width:670px;padding:16px 18px;border:1px solid #ffffff22;background:#ffffff0d;border-radius:18px;backdrop-filter:blur(12px)}.quote-mark{font-family:Georgia;font-size:50px;line-height:.6;color:#e6c87f}.quote strong{color:#f1d494}.quote p{margin:4px 0 2px;font-size:13px;line-height:1.9}.quote small{color:#bcd0d7}
+.visual{height:510px;position:relative}.glow{position:absolute;width:390px;height:390px;right:55px;top:50px;border-radius:50%;background:#62c5c51a;box-shadow:0 0 100px #62c5c526}.glass-card{position:absolute;z-index:4;background:#ffffff10;border:1px solid #ffffff25;backdrop-filter:blur(15px);border-radius:17px;padding:13px 15px;min-width:155px;box-shadow:0 18px 45px #0003}.glass-card .ico{font-size:22px}.glass-card b{display:block;font-size:13px}.glass-card small{font-size:10px;color:#c6d9de}.g1{top:35px;right:0}.g2{top:190px;left:0}.g3{bottom:35px;right:40px}.building{position:absolute;right:65px;left:60px;bottom:55px;height:320px;border:1px solid #ffffff1e;border-bottom:0;border-radius:190px 190px 0 0;background:linear-gradient(180deg,#ffffff0b,#ffffff02);overflow:hidden}.building:before{content:"";position:absolute;inset:28px 34px;border:1px solid #ffffff12;border-bottom:0;border-radius:160px 160px 0 0}.student{position:absolute;bottom:45px;width:105px;height:255px}.student:before{content:"";position:absolute;width:68px;height:68px;border-radius:50%;top:0;left:18px;background:#d8b18c;box-shadow:0 0 0 7px #ffffff08}.student:after{content:"";position:absolute;width:95px;height:150px;top:68px;left:5px;border-radius:44px 44px 14px 14px;background:linear-gradient(145deg,#f5f7f7,#a9c3c9);box-shadow:0 20px 25px #0002}.s1{right:100px}.s2{right:255px;transform:scale(.84);bottom:40px}.s3{right:365px;transform:scale(.7);bottom:55px}.s2:after{background:linear-gradient(145deg,#dbecef,#86adb7)}.s3:after{background:linear-gradient(145deg,#f3e7cc,#c4a86d)}
+.wave{position:absolute;bottom:-2px;left:-5%;width:110%;height:150px;background:#f4f7f9;border-radius:50% 50% 0 0/70% 70% 0 0}
+.section{padding:70px 0}.section-head{text-align:center;margin-bottom:35px}.kicker{color:var(--teal);font-weight:800;font-size:12px;letter-spacing:1px}.section h2{font-size:34px;margin:7px 0}.section-head p{color:var(--muted);margin:0}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.feature{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:0 12px 35px #102a430b;position:relative;overflow:hidden}.feature:after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;background:#2d9aa010;left:-30px;bottom:-35px}.feature-icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#eaf7f7,#f9f3e7);font-size:23px;margin-bottom:16px}.feature h3{margin:0 0 6px}.feature p{color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+.premium-band{margin:0 auto 65px;max-width:1180px;border-radius:28px;padding:30px;background:linear-gradient(120deg,#0b2941,#0f5662);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:25px;box-shadow:0 20px 55px #0a294425}.premium-band h2{margin:0 0 6px}.premium-band p{margin:0;color:#cfe1e4;font-size:13px}.gold-chip{background:#e1c17a;color:#0b263d;padding:9px 13px;border-radius:12px;font-weight:800;white-space:nowrap}
+.main{padding-bottom:80px}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:0 12px 35px #102a4308}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px}.card{background:linear-gradient(145deg,#fff,#f8fafb);border:1px solid var(--line);border-radius:18px;padding:19px;cursor:pointer;transition:.2s;box-shadow:0 8px 25px #102a4308}.card:hover{transform:translateY(-4px);box-shadow:0 16px 35px #102a4315}.card h3{margin:0 0 7px}.meta{color:var(--muted);font-size:13px}.back{border:0;background:#edf3f6;color:var(--navy);padding:10px 14px;border-radius:11px;font-weight:800;cursor:pointer;margin-bottom:18px}.option{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:17px;padding:19px;margin-bottom:12px;cursor:pointer;box-shadow:0 8px 25px #102a4307}.option .icon{font-size:28px}.list{display:flex;flex-direction:column;gap:11px}.item{background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px}.item-title{font-weight:800}.item a{display:inline-block;margin-top:9px;color:#126d78;text-decoration:none;font-weight:800}.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tool{background:linear-gradient(145deg,#fff,#f7fafb);border:1px solid var(--line);border-radius:20px;padding:21px}.tool-icon{font-size:28px}.tool h3{margin:8px 0}.tool p{font-size:13px;color:var(--muted);line-height:1.8}.tool input{width:100%;padding:11px;border:1px solid #dbe3e8;border-radius:10px;margin:5px 0;font-family:inherit}.tool button{width:100%;padding:11px;border:0;border-radius:10px;background:var(--navy);color:#fff;font-weight:800;cursor:pointer}.result{margin-top:9px;padding:10px;border-radius:10px;background:#edf8f7;color:#175a60;font-weight:800}.plan{overflow:auto}.plan table{width:100%;border-collapse:collapse}.plan th,.plan td{padding:12px;border-bottom:1px solid #edf0f2;text-align:right}.plan th{background:#f6f9fa;color:var(--navy)}.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.link-card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:17px;padding:18px}.loading,.empty,.error{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.error{color:#8d2020}
+footer{background:#061827;color:#b9ccd4}.footer{min-height:115px;display:flex;align-items:center;justify-content:space-between}.footer b{color:#fff}.footer small{display:block;margin-top:4px}
+@media(max-width:900px){.feature-grid{grid-template-columns:repeat(2,1fr)}.tool-grid{grid-template-columns:1fr}.hero-content{grid-template-columns:1fr}.visual{height:370px;order:-1}.hero{min-height:980px}.hero h1{font-size:58px}.nav-links{display:none}.menu-btn{display:block}.menu-open .nav-links{display:flex;position:absolute;top:70px;right:0;left:0;flex-direction:column;background:#0a2941;padding:10px;border-radius:14px}.premium-band{margin-left:16px;margin-right:16px}.s1{right:100px}.s2{right:225px}.s3{right:300px}}
+@media(max-width:560px){.container{width:min(100% - 22px,1180px)}.feature-grid{grid-template-columns:1fr}.hero-content{padding-bottom:40px}.visual{transform:scale(.82);transform-origin:center top;margin-bottom:-40px}.hero{min-height:900px}.hero h1{font-size:51px}.hero-title{font-size:21px}.section{padding:50px 0}.section h2{font-size:28px}.premium-band{flex-direction:column;align-items:flex-start}.footer{flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;padding:25px 0}}
+</style>
+</head>
+<body>
+<header class="hero">
+<nav class="nav container">
+<div class="logo"><span class="logo-mark">N</span><span>Nursing JPU</span></div>
+<button class="menu-btn" onclick="document.body.classList.toggle('menu-open')">☰</button>
+<div class="nav-links">
+<button onclick="showHome()">الرئيسية</button><button onclick="openCourses()">المواد</button><button onclick="openTools()">أدوات الطالب</button><button onclick="openPlan()">الخطة الدراسية</button><button onclick="openLinks()">روابط الجامعة</button>
+</div>
+</nav>
+<div class="hero-content container">
+<div>
+<div class="eyebrow">JERASH UNIVERSITY • FACULTY OF NURSING</div>
+<h1>Nursing JPU</h1>
+<div class="hero-title">بوابتك الراقية لرحلة التمريض الجامعية</div>
+<p class="hero-text">منصة مصممة لطالب التمريض تجمع المحتوى الدراسي وأدوات الطالب في تجربة مرتبة، سريعة، ومريحة على الهاتف والكمبيوتر.</p>
+<div class="actions"><button class="btn btn-primary" onclick="openCourses()">استكشف المواد ←</button><button class="btn btn-glass" onclick="openTools()">🧮 أدوات الطالب</button></div>
+<div class="quote"><div class="quote-mark">“</div><div><strong>صدقة جارية</strong><p>«إذا مات ابن آدم انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له»</p><small>رواه مسلم</small></div></div>
+</div>
+<div class="visual">
+<div class="glow"></div>
+<div class="glass-card g1"><span class="ico">📚</span><b>موادك الدراسية</b><small>كل شيء بمكان واحد</small></div>
+<div class="glass-card g2"><span class="ico">🧮</span><b>أدوات الطالب</b><small>معدلك وحساباتك</small></div>
+<div class="glass-card g3"><span class="ico">🎓</span><b>رحلتك الجامعية</b><small>نظّم خطتك بسهولة</small></div>
+<div class="building"></div><div class="student s1"></div><div class="student s2"></div><div class="student s3"></div>
+</div>
+</div><div class="wave"></div>
+</header>
+
+<section class="section">
+<div class="container">
+<div class="section-head"><div class="kicker">كل ما تحتاجه</div><h2>منصة واحدة لطالب التمريض</h2><p>واجهة واضحة ومحتوى منظم بدل التنقل بين عشرات الملفات والروابط.</p></div>
+<div class="feature-grid">
+<div class="feature"><div class="feature-icon">📚</div><h3>المواد والشابترات</h3><p>الوصول إلى المادة ثم الشابتر بطريقة مرتبة وواضحة.</p></div>
+<div class="feature"><div class="feature-icon">🎥</div><h3>المحاضرات</h3><p>روابط المحاضرات والملفات المرتبطة بكل شابتر.</p></div>
+<div class="feature"><div class="feature-icon">📄</div><h3>التلاخيص</h3><p>ملفات التلخيص محفوظة مع الشابتر الخاص بها.</p></div>
+<div class="feature"><div class="feature-icon">📊</div><h3>أدوات الطالب</h3><p>حاسبات للمعدل والعلامات والساعات المتبقية.</p></div>
+</div>
+</div>
+</section>
+
+<div class="premium-band">
+<div><h2>مصمم للطالب أولًا</h2><p>ألوان هادئة، بطاقات مرتبة، وتجربة متجاوبة مع شاشة الهاتف.</p></div><div class="gold-chip">NURSING • JPU</div>
+</div>
+
+<main id="app" class="container main"></main>
+
+<footer><div class="container footer"><div><b>Nursing JPU</b><small>بوابة طالب التمريض — Jerash University</small></div><span>© Nursing JPU</span></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL="https://tpgyvndxurzacuttsefg.supabase.co";
+const SUPABASE_KEY="sb_publishable_0y49bDfkvVPry5j0wvODGg_8SI5YuwJ";
+const {createClient}=supabase,db=createClient(SUPABASE_URL,SUPABASE_KEY),app=document.getElementById("app");
+let courses=[];
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+const render=h=>app.innerHTML=h,back=js=>`<button class="back" onclick="${js}">← رجوع</button>`;
+function showHome(){render(`<section class="panel"><h2>مرحبًا بك في Nursing JPU 👋</h2><p class="meta">اختر القسم الذي تريد الوصول إليه.</p><div class="grid"><div class="card" onclick="openCourses()"><h3>📚 المواد الدراسية</h3><div class="meta">المواد والشابترات والمحاضرات والتلاخيص</div></div><div class="card" onclick="openTools()"><h3>🧮 أدوات الطالب</h3><div class="meta">المعدل والعلامة المطلوبة والساعات</div></div><div class="card" onclick="openPlan()"><h3>🗂️ الخطة الدراسية</h3><div class="meta">تنظيم ومتابعة الخطة</div></div><div class="card" onclick="openLinks()"><h3>🔗 روابط الجامعة</h3><div class="meta">الوصول السريع للروابط المهمة</div></div></div></section>`)}
+async function openCourses(){render('<div class="loading">جاري تحميل المواد...</div>');const{data,error}=await db.from("courses").select("*").order("year_level").order("name_ar");if(error)return err(error);courses=data||[];render(`${back("showHome()")}<h2>📚 المواد الدراسية</h2><p class="meta">اختر المادة للدخول إلى الشابترات.</p><div class="grid">${courses.map(c=>`<div class="card" onclick="openCourse(${c.id})"><h3>${esc(c.name_ar||c.name_en)}</h3><div class="meta">${esc(c.code||"")}${c.year_level?` • السنة ${esc(c.year_level)}`:""}</div></div>`).join("")||'<div class="empty">لا توجد مواد مضافة حاليًا.</div>'}</div>`)}
+async function openCourse(id){const c=courses.find(x=>x.id===id);if(!c)return;render('<div class="loading">جاري تحميل الشابترات...</div>');const{data,error}=await db.from("chapters").select("*").eq("course_id",id).order("chapter_number");if(error)return err(error);render(`${back("openCourses()")}<h2>${esc(c.name_ar||c.name_en)}</h2><div class="grid">${(data||[]).map(ch=>`<div class="card" onclick="openChapter(${ch.id})"><h3>Chapter ${esc(ch.chapter_number)}${ch.title_ar?` — ${esc(ch.title_ar)}`:""}</h3><div class="meta">${esc(ch.description||"")}</div></div>`).join("")||'<div class="empty">لا توجد شابترات.</div>'}</div>`)}
+async function openChapter(id){const{data:ch,error}=await db.from("chapters").select("*").eq("id",id).single();if(error)return err(error);render(`${back("openCourses()")}<h2>Chapter ${esc(ch.chapter_number)}${ch.title_ar?` — ${esc(ch.title_ar)}`:""}</h2><div class="option" onclick="openLectures(${id})"><span class="icon">🎥</span><div><b>روابط المحاضرات</b><div class="meta">المحاضرات والروابط</div></div></div><div class="option" onclick="openSummaries(${id})"><span class="icon">📄</span><div><b>التلاخيص</b><div class="meta">ملفات التلخيص</div></div></div>`)}
+async function openLectures(id){render('<div class="loading">جاري التحميل...</div>');const{data,error}=await db.from("lectures").select("*").eq("chapter_id",id).order("id");if(error)return err(error);render(`${back("openChapter("+id+")")}<h2>🎥 روابط المحاضرات</h2><div class="list">${(data||[]).map(x=>`<div class="item"><div class="item-title">${esc(x.title_ar||x.title_en||"محاضرة")}</div><div class="meta">${esc(x.description||"")}</div>${x.video_url?`<a href="${esc(x.video_url)}" target="_blank">فتح المحاضرة ↗</a>`:""}${x.file_url?`<a href="${esc(x.file_url)}" target="_blank">فتح الملف ↗</a>`:""}</div>`).join("")||'<div class="empty">لا توجد محاضرات.</div>'}</div>`)}
+async function openSummaries(id){render('<div class="loading">جاري التحميل...</div>');const{data,error}=await db.from("summaries").select("*").eq("chapter_id",id).order("id");if(error)return err(error);render(`${back("openChapter("+id+")")}<h2>📄 التلاخيص</h2><div class="list">${(data||[]).map(x=>`<div class="item"><div class="item-title">${esc(x.title||"تلخيص")}</div><div class="meta">${esc(x.description||"")}</div>${x.file_url?`<a href="${esc(x.file_url)}" target="_blank">فتح التلخيص ↗</a>`:""}</div>`).join("")||'<div class="empty">لا توجد تلاخيص.</div>'}</div>`)}
+function openTools(){render(`${back("showHome()")}<h2>🧮 أدوات الطالب</h2><p class="meta">حاسبات بسيطة لمتابعة وضعك الأكاديمي.</p><div class="tool-grid"><div class="tool"><div class="tool-icon">📊</div><h3>المعدل الفصلي</h3><p>أدخل الساعات وإجمالي النقاط.</p><input id="sh" type="number" placeholder="الساعات"><input id="sp" type="number" step=".01" placeholder="النقاط × الساعات"><button onclick="sem()">احسب</button><div id="sr" class="result"></div></div><div class="tool"><div class="tool-icon">🎯</div><h3>العلامة المطلوبة</h3><p>احسب المطلوب في الجزء المتبقي.</p><input id="cm" type="number" placeholder="علامتك الحالية"><input id="cw" type="number" placeholder="وزن الجزء الحالي %"><input id="tm" type="number" placeholder="الهدف النهائي"><button onclick="need()">احسب</button><div id="nr" class="result"></div></div><div class="tool"><div class="tool-icon">⏳</div><h3>الساعات المتبقية</h3><p>أدخل ساعات التخصص والمنجزة.</p><input id="th" type="number" placeholder="إجمالي الساعات"><input id="dh" type="number" placeholder="الساعات المنجزة"><button onclick="remain()">احسب</button><div id="rr" class="result"></div></div></div>`)}
+function sem(){let h=+sh.value,p=+sp.value;sr.textContent=h>0?(p/h).toFixed(2):"أدخل القيم بشكل صحيح"}
+function need(){let c=+cm.value,w=+cw.value,t=+tm.value,r=100-w,n=(t-c*w/100)/(r/100);nr.textContent=r>0&&n<=100?`تحتاج ${n.toFixed(2)} من 100.`:"الهدف غير ممكن بهذه القيم."}
+function remain(){let t=+th.value,d=+dh.value;rr.textContent=t>=d?`المتبقي: ${t-d} ساعة.`:"راجع القيم."}
+function openPlan(){render(`${back("showHome()")}<h2>🗂️ الخطة الدراسية</h2><p class="meta">قسم الخطة الدراسية جاهز لإضافة خطة التخصص.</p><div class="panel plan"><table><tr><th>السنة</th><th>الفصل</th><th>المواد</th><th>الساعات</th></tr><tr><td>—</td><td>—</td><td>سيتم إدخال بيانات الخطة</td><td>—</td></tr></table></div>`)}
+function openLinks(){render(`${back("showHome()")}<h2>🔗 روابط الجامعة</h2><p class="meta">وصول سريع للموقع الرسمي.</p><div class="links"><a class="link-card" href="https://www.jpu.edu.jo/" target="_blank"><b>🎓 جامعة جرش</b><div class="meta">الموقع الرسمي</div></a></div>`)}
+function err(e){console.error(e);render(`<div class="error"><b>حدث خطأ في الاتصال.</b><p>${esc(e?.message||"")}</p></div>`)}
+showHome();
+</script>
+</body></html>
